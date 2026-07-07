@@ -3,9 +3,6 @@ name: DynamicCVPipeline Tests
 on:
   workflow_dispatch:
   pull_request:
-    paths:
-      - 'third_party/ascend/lib/DynamicCVPipeline/**'
-      - 'third_party/ascend/include/DynamicCVPipeline/**'
 
 concurrency:
   group: dynamic-cv-pipeline-${{ github.event.pull_request.number || github.run_id }}
@@ -27,14 +24,19 @@ jobs:
           SSH_PASSWORD: ${{ secrets.DYNAMIC_CV_TEST_PASSWORD }}
           PR_NUM:       ${{ github.event.pull_request.number }}
         run: |
-          set -eu
+          set -eux
 
           sudo apt-get install -y sshpass
+
+          # Legacy KexAlgorithms required by older SSH server
+          SSH_OPTS="-o StrictHostKeyChecking=no -o KexAlgorithms=diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1 -o HostKeyAlgorithms=+ssh-rsa -o PreferredAuthentications=password -o PubkeyAuthentication=no -v"
+
+          export SSHPASS="${SSH_PASSWORD}"
 
           REMOTE_TMP="/tmp/dynamic-cv-pr-${PR_NUM}"
 
           # Run ci.py inside docker container on remote server
-          sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "
+          sshpass -e ssh ${SSH_OPTS} ${SSH_USER}@${SSH_HOST} "
             docker start z00896713
             docker exec z00896713 bash -c '
               chmod -R a+rwX /home/z00896713
@@ -46,11 +48,11 @@ jobs:
           "
 
           # Copy hello.txt back from remote
-          sshpass -p "${SSH_PASSWORD}" scp -o StrictHostKeyChecking=no \
+          sshpass -e scp ${SSH_OPTS} \
             ${SSH_USER}@${SSH_HOST}:${REMOTE_TMP}/hello.txt ./hello.txt
 
           # Cleanup remote temp
-          sshpass -p "${SSH_PASSWORD}" ssh -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} \
+          sshpass -e ssh ${SSH_OPTS} ${SSH_USER}@${SSH_HOST} \
             "rm -rf ${REMOTE_TMP}"
 
       - name: Upload hello.txt as PR artifact
