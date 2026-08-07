@@ -75,6 +75,8 @@ public:
     }
 
     for (Value value : values) {
+      if (!value)
+        continue;
       if (Operation *defOp = value.getDefiningOp()) {
         transferBlockIdToInsertedReplacement(op, defOp);
       }
