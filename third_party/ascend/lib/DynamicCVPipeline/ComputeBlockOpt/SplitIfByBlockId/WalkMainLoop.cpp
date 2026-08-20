@@ -56,6 +56,7 @@ walkMainLoop(Operation *op,
     if (pred(op).failed()) {
       return failure();
     }
+    containsMainLoop = true;
   }
 
   return WalkMainLoopResult{coreType, containsMainLoop};
