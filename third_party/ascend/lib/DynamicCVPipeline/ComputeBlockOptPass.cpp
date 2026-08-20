@@ -20,13 +20,9 @@
  * THE SOFTWARE.
  */
 
-#include "mlir/Pass/PassManager.h"
-#include "mlir/Pass/PassRegistry.h"
-
-#include "ascend/include/DynamicCVPipeline/Common/Utils.h"
 #include "ascend/include/DynamicCVPipeline/ComputeBlockOptPass.h"
-
 #include "DynamicCVPipeline/ComputeBlockOpt/Passes.h"
+#include "DynamicCVPipeline/PlanComputeBlock/Passes.h"
 #include "DynamicCVPipeline/PlanComputeBlock/ReorderOpsByBlockId.h"
 #include "ascend/include/DynamicCVPipeline/Common/Utils.h"
 #include "ascend/include/DynamicCVPipeline/PlanComputeBlockPass.h"
