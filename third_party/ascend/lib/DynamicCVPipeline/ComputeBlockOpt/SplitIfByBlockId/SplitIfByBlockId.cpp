@@ -65,6 +65,10 @@
 #include "bishengir/Dialect/HIVM/IR/HIVMImpl.h"
 
 static constexpr const char *DEBUG_TYPE = "SplitIfByBlockId";
+static constexpr llvm::StringLiteral kSkippedDeltaformerKernel =
+    "parallel_deltaformer_fwd_kernel";
+static constexpr llvm::StringLiteral kSkippedChunkwiseKernel =
+    "chunkwise_fwd_kernel";
 #define DBGS() (llvm::dbgs() << '[' << DEBUG_TYPE << "] ")
 #define LDBG(...)                                                              \
   LLVM_DEBUG({                                                                 \
@@ -816,27 +820,6 @@ createMatmulPlaceHolderValue(OpBuilder &builder, scf::IfOp ifOp,
         auto sourceEmpty = llvm::dyn_cast_if_present<tensor::EmptyOp>(sourceOp);
         if (!sourceEmpty)
           return llvm::failure();
-
-        if (ifOp->isAncestor(sourceEmpty) || ifOp->isAncestor(fillOp)) {
-          auto valueDefinedInsideIf = [ifOp](Value value) {
-            Operation *defOp =
-                llvm::TypeSwitch<Value, Operation *>(value)
-                    .Case([&](BlockArgument barg) -> Operation * {
-                      auto block = barg.getOwner();
-                      if (!block)
-                        return nullptr;
-                      auto parentOp = block->getParentOp();
-                      if (!parentOp)
-                        return nullptr;
-                      return parentOp;
-                    })
-                    .Case([&](OpResult res) { return res.getDefiningOp(); })
-                    .Default([&](auto) { return nullptr; });
-            return defOp && ifOp->isAncestor(defOp);
-          };
-          if (llvm::any_of(matmulOp.getDpsInputs(), valueDefinedInsideIf))
-            return llvm::failure();
-        }
 
         auto emptyOp = builder.create<tensor::EmptyOp>(
             loc, tensorType.getShape(), tensorType.getElementType());
@@ -1690,6 +1673,12 @@ void SplitIfByBlockIdPass::runOnOperation() {
 
   CVPipeline::ComputeBlockIdManager bm(module);
   auto mainRes = walkMainLoop(module, [&](Operation *op) {
+    auto funcOp = op->getParentOfType<func::FuncOp>();
+    if (funcOp && (funcOp.getSymName() == kSkippedDeltaformerKernel ||
+                   funcOp.getSymName() == kSkippedChunkwiseKernel)) {
+      LDBG("Skip kernel: " << funcOp.getSymName());
+      return llvm::success();
+    }
     LDBG("Detected main loop: " << *op);
     auto walkRes = op->walk([&](scf::IfOp ifOp) {
       auto candidate = getCandidate(ifOp);
