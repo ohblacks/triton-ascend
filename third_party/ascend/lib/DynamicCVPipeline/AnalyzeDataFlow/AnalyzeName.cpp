@@ -42,7 +42,8 @@ namespace {
 
 static constexpr llvm::StringLiteral interceptrFunc[]{
     "_parallel_hstu_attn_bwd", "chunk_abc_bwd_kernel_dh",
-    "flash_varlen_fwd_kernel", "chunk_gsa_bwd_k_kernel_dqkvg"};
+    "flash_varlen_fwd_kernel", "chunk_gsa_bwd_k_kernel_dqkvg",
+    "chunk_gsa_fwd_k_kernel_intra"};
 
 static LogicalResult verifyFuncNames(ModuleOp module) {
   bool intercepted = false;
