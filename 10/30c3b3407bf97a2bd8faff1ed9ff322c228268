@@ -1,0 +1,32 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/selection_and_fallback.mlir
+  s_f593f1df7420b1::t_4ff6f465b03ae3 3-9,13,15-17,25-27,30-31,39-41,45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "1030c3b3407bf97a2bd8faff1ed9ff322c228268",
+  "prompts": {},
+  "sessions": {
+    "s_f593f1df7420b1": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a92343cd9f63d0e38360218",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "external_session_id": "6a92343cd9f63d0e38360218",
+        "source_scene": "unknown",
+        "tool_id": "Edit",
+        "operation_id": "6a9299277924703fd435b658",
+        "dedupe_key": "6a92343cd9f63d0e38360218:6a9299277924703fd435b658:afterEdit:d60ad1e2",
+        "edit_kind": "file_edit",
+        "session_id": "6a92343cd9f63d0e38360218",
+        "client_type": "ide",
+        "tool_type": "agent",
+        "tool_use_id": "6a9299277924703fd435b658",
+        "runtime_client": "trae-tob-git-ai"
+      }
+    }
+  }
+}
