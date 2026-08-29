@@ -1,0 +1,33 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_a056264408d0cb::t_24e37a5c25baa6 72-73
+  s_a056264408d0cb::t_ef8dd4c2a2d247 1680-1681
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "11e604a52ea7535a9a6a5503a035266e4f6b4a63",
+  "prompts": {},
+  "sessions": {
+    "s_a056264408d0cb": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9104bf6356d210c75822b4",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "runtime_client": "trae-tob-git-ai",
+        "source_scene": "unknown",
+        "tool_id": "Edit",
+        "client_type": "ide",
+        "tool_type": "agent",
+        "external_session_id": "6a9104bf6356d210c75822b4",
+        "session_id": "6a9104bf6356d210c75822b4",
+        "operation_id": "6a9105086356d210c75822e6",
+        "tool_use_id": "6a9105086356d210c75822e6",
+        "edit_kind": "file_edit",
+        "dedupe_key": "6a9104bf6356d210c75822b4:6a9105086356d210c75822e6:afterEdit:ead9d610"
+      }
+    }
+  }
+}
