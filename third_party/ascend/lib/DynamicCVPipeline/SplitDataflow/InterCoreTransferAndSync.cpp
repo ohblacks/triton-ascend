@@ -1039,6 +1039,7 @@ bool hasMemDepSyncWhitelistKernel(ModuleOp module) {
   std::vector<std::string> whitelist{
       "_hstu_attn_fwd",
       "parallel_path_fwd_kernel",
+      "sparse_flash_attention_grad_kernel",
   };
 
   // Check if any func name matches the whitelist
