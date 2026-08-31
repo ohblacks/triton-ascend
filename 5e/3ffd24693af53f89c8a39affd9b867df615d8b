@@ -1,0 +1,68 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/selection_and_fallback.mlir
+  s_f593f1df7420b1::t_d19c0350104e5d 2
+  s_f593f1df7420b1::t_0849bd300bd3b2 24
+  s_f593f1df7420b1::t_c5dc2e59d7ec80 22
+  s_f593f1df7420b1::t_4ff6f465b03ae3 3-9,13,15-17,25-41,66
+  s_f593f1df7420b1::t_953d8b033ff463 44-65
+  s_f593f1df7420b1::t_eb2a209e5ba291 10-12,14,18-21,23,42-43
+  s_f593f1df7420b1::t_b87f74950eb8ab 1
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_f593f1df7420b1::t_3266fca7b6a774 190-232
+  s_f593f1df7420b1::t_2ea4ce1ad55e71 452
+  s_ed81356ea49cdb::t_2257e03a54f6ea 371-373,375,378-379
+  s_f593f1df7420b1::t_529c0075531274 165-168,170
+  s_f593f1df7420b1::t_62f1e987aa7702 382-386
+  s_ed81356ea49cdb::t_fd3cdd7cdee7fb 233-257
+  s_f593f1df7420b1::t_003e19201c3a50 801,805
+  s_f593f1df7420b1::t_19fdf2b95fa8ad 1491
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "5e3ffd24693af53f89c8a39affd9b867df615d8b",
+  "prompts": {},
+  "sessions": {
+    "s_ed81356ea49cdb": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a929b12f8b9354371d8319f",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "tool_use_id": "6a94e09b97d1b98a2eccda7a",
+        "edit_kind": "file_edit",
+        "source_scene": "unknown",
+        "external_session_id": "6a929b12f8b9354371d8319f",
+        "operation_id": "6a94e09b97d1b98a2eccda7a",
+        "session_id": "6a929b12f8b9354371d8319f",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_type": "agent",
+        "tool_id": "Edit",
+        "dedupe_key": "6a929b12f8b9354371d8319f:6a94e09b97d1b98a2eccda7a:afterEdit:966927a3",
+        "client_type": "ide"
+      }
+    },
+    "s_f593f1df7420b1": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a92343cd9f63d0e38360218",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "tool_use_id": "6a928c4e7924703fd435b400",
+        "source_scene": "unknown",
+        "dedupe_key": "6a92343cd9f63d0e38360218:6a928c4e7924703fd435b400:afterEdit:ce362a52",
+        "tool_id": "Edit",
+        "edit_kind": "file_edit",
+        "client_type": "ide",
+        "tool_type": "agent",
+        "runtime_client": "trae-tob-git-ai",
+        "operation_id": "6a928c4e7924703fd435b400",
+        "external_session_id": "6a92343cd9f63d0e38360218",
+        "session_id": "6a92343cd9f63d0e38360218"
+      }
+    }
+  }
+}
