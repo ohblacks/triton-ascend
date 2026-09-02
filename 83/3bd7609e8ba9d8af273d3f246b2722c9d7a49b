@@ -1,0 +1,96 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/selection_and_fallback.mlir
+  s_a76d5a197f84b5::t_ea748545a4d1b5 91-93
+  s_a76d5a197f84b5::t_937c7993b0d52d 100-105
+  s_a76d5a197f84b5::t_92dabe240a140c 108
+  s_a76d5a197f84b5::t_31521c8b9bd52a 77
+  s_a76d5a197f84b5::t_0befe3c9590e3b 1-2
+  s_a76d5a197f84b5::t_72658a70d7066f 79-81
+  s_a76d5a197f84b5::t_f0594918c60a58 110
+  s_a76d5a197f84b5::t_6c776d5b5fc004 116-118
+  s_a76d5a197f84b5::t_13ffa70892edce 3-20
+  s_a76d5a197f84b5::t_08f7b28511cc09 25
+  s_a76d5a197f84b5::t_9e4ccd36ed4a68 85
+  s_a76d5a197f84b5::t_07f6837d6553f6 27
+  s_a76d5a197f84b5::t_c19d016b8d671a 98
+  s_a76d5a197f84b5::t_5da4475662b96b 21-24,26,28-76,78,82-84,86-90,94-97,99,106-107,109,111-115,119-123
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_25950822256e54::t_45084cbdcd0cd1 184,211
+  s_25950822256e54::t_28872743638095 352-353
+  s_a76d5a197f84b5::t_33165118a84990 359-361
+  s_a76d5a197f84b5::t_026f7ce03f4878 299-301,304-306
+  s_a76d5a197f84b5::t_fd1fca178b6f15 163-164
+  s_a76d5a197f84b5::t_b94466a7cf6ec2 214-220,222-223,237-251,266-287,290-292
+  s_25950822256e54::t_b5415f86122016 344-346
+  s_a76d5a197f84b5::t_d0731454ba50b6 349-350,354
+  s_25950822256e54::t_b2d3e733d1c02f 185,212,343,370-372
+  s_25950822256e54::t_b22c31b3fcb767 165-167
+  s_25950822256e54::t_13b60180d2dcba 186
+  s_a76d5a197f84b5::t_42c17334f788d0 505
+  s_a76d5a197f84b5::t_b8b34122282a89 187-197,199,204-206,221,224-233,236,252-259,261-265,288-289,302-303,310-320,323-326,328-331,333-342,1889
+  s_a76d5a197f84b5::t_8c2b7fef7718e9 1883-1884,1886
+  s_25950822256e54::t_6eae553b40e87a 198
+  s_25950822256e54::t_81e2f1f95d6f34 177-178,182-183,201-202,234-235,260,321-322,327,355,368-369
+  s_25950822256e54::t_f53832cc9350e8 179-180
+  s_a76d5a197f84b5::t_a1fd6aec4219f8 307-309
+  s_a76d5a197f84b5::t_80c9e5f1c4e851 332
+  s_25950822256e54::t_39cf331179826a 173
+  s_a76d5a197f84b5::t_63ae3cc1e79b72 498-500
+  s_25950822256e54::t_eb7ecc0d3410c3 203,207
+  s_25950822256e54::t_aeee742c8f5aaa 356-358,362-367
+  s_a76d5a197f84b5::t_1a45efea3a8fdb 501-504
+  s_a76d5a197f84b5::t_6b60873a5ddb37 1887-1888
+  s_25950822256e54::t_7f05d3cccb98a7 174-176,181,200
+  s_25950822256e54::t_c1eec596d47c1c 347-348,351
+  s_25950822256e54::t_48f3b3fc280005 168
+  s_a76d5a197f84b5::t_fb408500ee1e26 477-479
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "833bd7609e8ba9d8af273d3f246b2722c9d7a49b",
+  "prompts": {},
+  "sessions": {
+    "s_25950822256e54": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9679afdb532bc2234ed734",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "tool_type": "agent",
+        "runtime_client": "trae-tob-git-ai",
+        "source_scene": "unknown",
+        "dedupe_key": "6a9679afdb532bc2234ed734:6a97be3e27051a6b99e57566:afterEdit:966927a3",
+        "operation_id": "6a97be3e27051a6b99e57566",
+        "tool_id": "Edit",
+        "edit_kind": "file_edit",
+        "client_type": "ide",
+        "tool_use_id": "6a97be3e27051a6b99e57566",
+        "session_id": "6a9679afdb532bc2234ed734",
+        "external_session_id": "6a9679afdb532bc2234ed734"
+      }
+    },
+    "s_a76d5a197f84b5": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a97d09e27051a6b99e57688",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "edit_kind": "file_edit",
+        "dedupe_key": "6a97d09e27051a6b99e57688:6a97ea5127051a6b99e57875:afterEdit:966927a3",
+        "tool_use_id": "6a97ea5127051a6b99e57875",
+        "tool_type": "agent",
+        "client_type": "ide",
+        "session_id": "6a97d09e27051a6b99e57688",
+        "source_scene": "unknown",
+        "external_session_id": "6a97d09e27051a6b99e57688",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_id": "Edit",
+        "operation_id": "6a97ea5127051a6b99e57875"
+      }
+    }
+  }
+}
