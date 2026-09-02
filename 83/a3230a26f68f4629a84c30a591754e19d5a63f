@@ -1,0 +1,48 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_25950822256e54::t_81e2f1f95d6f34 176-177,192,197-198,204-205,215-241,256,269-270
+  s_25950822256e54::t_6eae553b40e87a 189-191
+  s_25950822256e54::t_f53832cc9350e8 178-179
+  s_25950822256e54::t_fa74f71d3d30ab 212-214
+  s_25950822256e54::t_9b10d4bf6f8d01 163
+  s_25950822256e54::t_28872743638095 253-255
+  s_25950822256e54::t_b2d3e733d1c02f 184,271-273
+  s_25950822256e54::t_b22c31b3fcb767 164-166
+  s_25950822256e54::t_7f05d3cccb98a7 173-175
+  s_25950822256e54::t_45084cbdcd0cd1 183,206-211
+  s_25950822256e54::t_4b7e1bacda47e3 193-196
+  s_25950822256e54::t_eb7ecc0d3410c3 199-203
+  s_25950822256e54::t_aeee742c8f5aaa 257-268
+  s_25950822256e54::t_48f3b3fc280005 167
+  s_25950822256e54::t_39cf331179826a 172
+  s_25950822256e54::t_13b60180d2dcba 185-188
+  s_25950822256e54::t_c1eec596d47c1c 250-252
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "83a3230a26f68f4629a84c30a591754e19d5a63f",
+  "prompts": {},
+  "sessions": {
+    "s_25950822256e54": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9679afdb532bc2234ed734",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "external_session_id": "6a9679afdb532bc2234ed734",
+        "tool_type": "agent",
+        "edit_kind": "file_edit",
+        "tool_use_id": "6a97be3e27051a6b99e57566",
+        "source_scene": "unknown",
+        "client_type": "ide",
+        "tool_id": "Edit",
+        "session_id": "6a9679afdb532bc2234ed734",
+        "runtime_client": "trae-tob-git-ai",
+        "operation_id": "6a97be3e27051a6b99e57566",
+        "dedupe_key": "6a9679afdb532bc2234ed734:6a97be3e27051a6b99e57566:afterEdit:966927a3"
+      }
+    }
+  }
+}
