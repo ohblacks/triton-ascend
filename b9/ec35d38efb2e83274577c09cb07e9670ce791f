@@ -1,0 +1,156 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_25950822256e54::t_39cf331179826a 171
+  s_a76d5a197f84b5::t_b94466a7cf6ec2 222,248-250,258,260-261,270-272,277-279
+  s_a76d5a197f84b5::t_378af086ec581f 473
+  s_25950822256e54::t_aeee742c8f5aaa 350-352,356-361
+  s_140479f417c07e::t_4063516e4c3cfe 304
+  s_a76d5a197f84b5::t_a397e2640c5ffc 1888
+  s_a76d5a197f84b5::t_273a2310c5e587 62,375-377,379-380,572-574
+  s_a76d5a197f84b5::t_6b60873a5ddb37 1889-1890
+  s_25950822256e54::t_7f05d3cccb98a7 172-174,179,201
+  h_a864c273c84a0b 253
+  s_140479f417c07e::t_85db1d9b859a6e 68-69
+  s_25950822256e54::t_13b60180d2dcba 184
+  s_a76d5a197f84b5::t_e4a26158e2ef65 232-236
+  s_25950822256e54::t_81e2f1f95d6f34 175-176,180-181,243,262,268,281,321,349,362-363
+  s_a76d5a197f84b5::t_d504194f2b5c68 302-303,314-316,326
+  s_140479f417c07e::t_14041023afe2f2 185-188,190-192
+  s_92ac20d756470b::t_a203fd4d25d84d 197-200
+  s_140479f417c07e::t_a85c7eecbf5cf7 292
+  s_a76d5a197f84b5::t_a1fd6aec4219f8 301
+  s_a76d5a197f84b5::t_b8b34122282a89 189,193-195,205-207,237-238,241-242,244-245,276,296-297,305-313,317-320,322-325,327-336
+  s_a76d5a197f84b5::t_33165118a84990 353-355
+  s_a76d5a197f84b5::t_63ae3cc1e79b72 494-495
+  s_a76d5a197f84b5::t_026f7ce03f4878 293-295,298-300
+  s_a76d5a197f84b5::t_fb408500ee1e26 472
+  s_25950822256e54::t_f53832cc9350e8 177-178
+  s_25950822256e54::t_eb7ecc0d3410c3 208
+  s_25950822256e54::t_c1eec596d47c1c 341-342,345
+  s_25950822256e54::t_b22c31b3fcb767 163-165
+  s_25950822256e54::t_48f3b3fc280005 166
+  s_25950822256e54::t_b5415f86122016 338-340
+  s_140479f417c07e::t_5876c20601aaef 269,282,381,483-486,491,497-507
+  s_25950822256e54::t_45084cbdcd0cd1 182
+  s_a76d5a197f84b5::t_d0731454ba50b6 343-344,348
+  s_a76d5a197f84b5::t_7353c32b2fb0da 496
+  s_a76d5a197f84b5::t_fd1fca178b6f15 161-162
+  s_140479f417c07e::t_5bd5a2410fcb8f 487
+  s_25950822256e54::t_b2d3e733d1c02f 183,284,337,364-366
+  s_140479f417c07e::t_b78aa3d310012e 209,216-221,223-231,239-240,246-247,251-252,254-257,259,263-267,273-275,280,283,286-291
+  s_25950822256e54::t_6eae553b40e87a 196
+  s_25950822256e54::t_28872743638095 346-347
+  s_a76d5a197f84b5::t_8c2b7fef7718e9 1885
+  s_92ac20d756470b::t_860a364bdf28cc 285,367,474,488,508,575,617,923,927,1613,1880,1886,1891
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/selection_and_fallback.mlir
+  s_a76d5a197f84b5::t_08f7b28511cc09 25
+  s_a76d5a197f84b5::t_9e4ccd36ed4a68 85
+  s_a76d5a197f84b5::t_c19d016b8d671a 98
+  s_a76d5a197f84b5::t_937c7993b0d52d 100-105
+  s_a76d5a197f84b5::t_92dabe240a140c 108
+  s_a76d5a197f84b5::t_f0594918c60a58 110
+  s_a76d5a197f84b5::t_5da4475662b96b 21-24,26,28-76,78,82-84,86-90,94-97,99,106-107,109,111-115,119-123
+  s_a76d5a197f84b5::t_0befe3c9590e3b 1-2
+  s_a76d5a197f84b5::t_6c776d5b5fc004 116-118
+  s_a76d5a197f84b5::t_07f6837d6553f6 27
+  s_a76d5a197f84b5::t_13ffa70892edce 3-20
+  s_a76d5a197f84b5::t_ea748545a4d1b5 91-93
+  s_a76d5a197f84b5::t_31521c8b9bd52a 77
+  s_a76d5a197f84b5::t_72658a70d7066f 79-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "b9ec35d38efb2e83274577c09cb07e9670ce791f",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_140479f417c07e": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a97e5ad27051a6b99e577fe",
+        "model": "glm-5.3-flash__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "source_scene": "unknown",
+        "edit_kind": "file_edit",
+        "tool_use_id": "6a9931c8bb693721c77b583f",
+        "tool_id": "Edit",
+        "runtime_client": "trae-tob-git-ai",
+        "external_session_id": "6a97e5ad27051a6b99e577fe",
+        "client_type": "ide",
+        "operation_id": "6a9931c8bb693721c77b583f",
+        "session_id": "6a97e5ad27051a6b99e577fe",
+        "tool_type": "agent",
+        "dedupe_key": "6a97e5ad27051a6b99e577fe:6a9931c8bb693721c77b583f:afterEdit:966927a3"
+      }
+    },
+    "s_25950822256e54": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9679afdb532bc2234ed734",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "client_type": "ide",
+        "source_scene": "unknown",
+        "tool_use_id": "6a97be3e27051a6b99e57566",
+        "tool_type": "agent",
+        "runtime_client": "trae-tob-git-ai",
+        "edit_kind": "file_edit",
+        "tool_id": "Edit",
+        "operation_id": "6a97be3e27051a6b99e57566",
+        "dedupe_key": "6a9679afdb532bc2234ed734:6a97be3e27051a6b99e57566:afterEdit:966927a3",
+        "external_session_id": "6a9679afdb532bc2234ed734",
+        "session_id": "6a9679afdb532bc2234ed734"
+      }
+    },
+    "s_92ac20d756470b": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a993940bb693721c77b595d",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "dedupe_key": "6a993940bb693721c77b595d:6a993e55bb693721c77b5a36:afterEdit:966927a3",
+        "tool_type": "agent",
+        "source_scene": "unknown",
+        "operation_id": "6a993e55bb693721c77b5a36",
+        "tool_id": "Edit",
+        "edit_kind": "file_edit",
+        "session_id": "6a993940bb693721c77b595d",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_use_id": "6a993e55bb693721c77b5a36",
+        "external_session_id": "6a993940bb693721c77b595d",
+        "client_type": "ide"
+      }
+    },
+    "s_a76d5a197f84b5": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a97d09e27051a6b99e57688",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "runtime_client": "trae-tob-git-ai",
+        "client_type": "ide",
+        "external_session_id": "6a97d09e27051a6b99e57688",
+        "dedupe_key": "6a97d09e27051a6b99e57688:6a98c5a5434e85933df53f75:afterEdit:966927a3",
+        "session_id": "6a97d09e27051a6b99e57688",
+        "tool_id": "Edit",
+        "source_scene": "unknown",
+        "tool_use_id": "6a98c5a5434e85933df53f75",
+        "operation_id": "6a98c5a5434e85933df53f75",
+        "edit_kind": "file_edit",
+        "tool_type": "agent"
+      }
+    }
+  }
+}
