@@ -1,0 +1,35 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_140479f417c07e::t_b78aa3d310012e 217-225,227-238,246-247,253-254,258-259,261-268,270,274-279,284-286,297-305
+  s_140479f417c07e::t_5876c20601aaef 496-500,504,511-521
+  s_140479f417c07e::t_5bd5a2410fcb8f 501
+  s_140479f417c07e::t_a85c7eecbf5cf7 306
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "a32484c8a391a544681b07939c2d1f9ce83fc252",
+  "prompts": {},
+  "sessions": {
+    "s_140479f417c07e": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a97e5ad27051a6b99e577fe",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "operation_id": "6a98d722434e85933df540a8",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_id": "Edit",
+        "tool_type": "agent",
+        "source_scene": "unknown",
+        "dedupe_key": "6a97e5ad27051a6b99e577fe:6a98d722434e85933df540a8:afterEdit:966927a3",
+        "external_session_id": "6a97e5ad27051a6b99e577fe",
+        "tool_use_id": "6a98d722434e85933df540a8",
+        "client_type": "ide",
+        "session_id": "6a97e5ad27051a6b99e577fe",
+        "edit_kind": "file_edit"
+      }
+    }
+  }
+}
