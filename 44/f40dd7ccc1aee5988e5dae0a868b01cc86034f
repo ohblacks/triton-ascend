@@ -1,0 +1,229 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/selection_and_fallback.mlir
+  s_a76d5a197f84b5::t_31521c8b9bd52a 77
+  s_a76d5a197f84b5::t_5da4475662b96b 21-24,26,28-76,78,82-84,86-90,94-97,99,106-107,109,111-115,119-123
+  s_a76d5a197f84b5::t_08f7b28511cc09 25
+  s_a76d5a197f84b5::t_9e4ccd36ed4a68 85
+  s_a76d5a197f84b5::t_ea748545a4d1b5 91-93
+  s_a76d5a197f84b5::t_0befe3c9590e3b 1-2
+  s_a76d5a197f84b5::t_c19d016b8d671a 98
+  s_a76d5a197f84b5::t_f0594918c60a58 110
+  s_a76d5a197f84b5::t_72658a70d7066f 79-81
+  s_a76d5a197f84b5::t_6c776d5b5fc004 116-118
+  s_a76d5a197f84b5::t_13ffa70892edce 3-20
+  s_a76d5a197f84b5::t_937c7993b0d52d 100-105
+  s_a76d5a197f84b5::t_92dabe240a140c 108
+  s_a76d5a197f84b5::t_07f6837d6553f6 27
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_92ac20d756470b::t_860a364bdf28cc 313,419,431,449,504,546,840,844,1466,1721,1727,1732
+  s_25950822256e54::t_eb7ecc0d3410c3 200
+  s_25950822256e54::t_aeee742c8f5aaa 295-297,303-307
+  s_92ac20d756470b::t_eeafd869f3b384 1308
+  s_95ae3518604bca::t_23803962c613d0 184
+  s_92ac20d756470b::t_bb6c1d19382cff 731-732
+  s_92ac20d756470b::t_f0e3ada8030f60 1256-1257
+  s_25950822256e54::t_b22c31b3fcb767 156-158
+  s_a76d5a197f84b5::t_273a2310c5e587 63,321-323,325-326,501-503
+  s_92ac20d756470b::t_424cec9d95976f 883-884
+  s_92ac20d756470b::t_af9d324e854586 601
+  s_25950822256e54::t_39cf331179826a 164
+  s_92ac20d756470b::t_76e8eb5a1b9863 220-222,225-228,236
+  s_92ac20d756470b::t_f656f84095eca5 1031-1032
+  s_a76d5a197f84b5::t_fd1fca178b6f15 154-155
+  s_a76d5a197f84b5::t_b8b34122282a89 178,182-183,196,198-199,250-253,261,265-268,270-271,274,276-278,280-285
+  s_a76d5a197f84b5::t_d504194f2b5c68 246-247,262-264,275
+  s_95ae3518604bca::t_207bc84932aa3c 249,254-260
+  s_92ac20d756470b::t_1ff45310ee3759 998-999
+  s_25950822256e54::t_b2d3e733d1c02f 169,174-176,204,216-218,286,310-312,435
+  h_a864c273c84a0b 375,680,943-944,1004,1258,1455
+  s_92ac20d756470b::t_a2bc6e158ea0e0 942
+  s_92ac20d756470b::t_ddeedbd88a1774 558-559
+  s_95ae3518604bca::t_c8aec292daca46 279
+  s_92ac20d756470b::t_fed51d5e456ad4 679
+  s_92ac20d756470b::t_679ae89c3ff22b 1453-1454
+  s_95ae3518604bca::t_4586bc97ccf371 299-302
+  s_a76d5a197f84b5::t_6b60873a5ddb37 1730-1731
+  s_a76d5a197f84b5::t_8c2b7fef7718e9 1726
+  s_140479f417c07e::t_85db1d9b859a6e 69-70
+  s_140479f417c07e::t_14041023afe2f2 179-181
+  s_92ac20d756470b::t_1d22d4c902ba30 114
+  s_92ac20d756470b::t_293caafb218742 373-374
+  s_92ac20d756470b::t_c60dfd55b193c1 428-429
+  s_25950822256e54::t_7f05d3cccb98a7 165-166
+  s_140479f417c07e::t_b78aa3d310012e 201,206-213
+  s_a76d5a197f84b5::t_33165118a84990 298
+  s_92ac20d756470b::t_aaaa1758280428 1177
+  s_92ac20d756470b::t_ae94177b9aeb40 118
+  s_95ae3518604bca::t_07a09d7b64df47 272-273
+  s_92ac20d756470b::t_b1262bd6c2798f 331
+  s_7036416b14c130::t_82170fc6ae82c1 185,187-189,191-193,197,205
+  s_92ac20d756470b::t_1714477c16f689 1002-1003
+  s_92ac20d756470b::t_ffb594e2d20480 1284-1285
+  s_92ac20d756470b::t_6c9354b49c53cc 1326
+  s_92ac20d756470b::t_1dcf74d68de3cc 1375
+  s_92ac20d756470b::t_1734f379f58351 1491-1492
+  s_25950822256e54::t_f53832cc9350e8 170-171
+  s_25950822256e54::t_81e2f1f95d6f34 167-168,172-173,190,194,202-203,214-215,269,294,308-309
+  s_92ac20d756470b::t_52cd35d8674fca 57
+  s_92ac20d756470b::t_69a1b771780a3e 289-290
+  s_92ac20d756470b::t_c04495c0136e41 623-624
+  s_140479f417c07e::t_4063516e4c3cfe 248
+  s_92ac20d756470b::t_04bf58f022df85 445-446
+  s_92ac20d756470b::t_49d9a94fa8413c 838-839
+  s_92ac20d756470b::t_992370e86a8a18 859
+  s_25950822256e54::t_6eae553b40e87a 186
+  s_25950822256e54::t_28872743638095 291-292
+  s_a76d5a197f84b5::t_fb408500ee1e26 417
+  s_25950822256e54::t_48f3b3fc280005 159
+  s_92ac20d756470b::t_c7b991954d1dc7 244-245
+  s_92ac20d756470b::t_cafe480441d375 500
+  s_92ac20d756470b::t_50b84413f7a8d0 437-438
+  s_140479f417c07e::t_5876c20601aaef 195,327,434,439-442,447-448
+  s_92ac20d756470b::t_7aec1edd161ca8 223-224,229-232,237
+  s_25950822256e54::t_b5415f86122016 287-288
+  s_a76d5a197f84b5::t_d0731454ba50b6 293
+  s_140479f417c07e::t_5bd5a2410fcb8f 430
+  s_92ac20d756470b::t_67809964af9029 856
+  s_92ac20d756470b::t_e106faa1dbb29b 951-952
+  s_a76d5a197f84b5::t_378af086ec581f 418
+  s_a76d5a197f84b5::t_a397e2640c5ffc 1729
+  s_7036416b14c130::t_f2bc252f96f44b 177,219,436
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "44f40dd7ccc1aee5988e5dae0a868b01cc86034f",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_140479f417c07e": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a97e5ad27051a6b99e577fe",
+        "model": "glm-5.3-flash__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "tool_type": "agent",
+        "client_type": "ide",
+        "dedupe_key": "6a97e5ad27051a6b99e577fe:6a9931c8bb693721c77b583f:afterEdit:966927a3",
+        "session_id": "6a97e5ad27051a6b99e577fe",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_use_id": "6a9931c8bb693721c77b583f",
+        "edit_kind": "file_edit",
+        "tool_id": "Edit",
+        "external_session_id": "6a97e5ad27051a6b99e577fe",
+        "source_scene": "unknown",
+        "operation_id": "6a9931c8bb693721c77b583f"
+      }
+    },
+    "s_25950822256e54": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9679afdb532bc2234ed734",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "dedupe_key": "6a9679afdb532bc2234ed734:6a97be3e27051a6b99e57566:afterEdit:966927a3",
+        "external_session_id": "6a9679afdb532bc2234ed734",
+        "session_id": "6a9679afdb532bc2234ed734",
+        "source_scene": "unknown",
+        "operation_id": "6a97be3e27051a6b99e57566",
+        "tool_id": "Edit",
+        "tool_type": "agent",
+        "edit_kind": "file_edit",
+        "tool_use_id": "6a97be3e27051a6b99e57566",
+        "client_type": "ide",
+        "runtime_client": "trae-tob-git-ai"
+      }
+    },
+    "s_7036416b14c130": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a993a35bb693721c77b598f",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "dedupe_key": "6a993a35bb693721c77b598f:6a9a6a0df61eedd621f51177:afterEdit:966927a3",
+        "operation_id": "6a9a6a0df61eedd621f51177",
+        "external_session_id": "6a993a35bb693721c77b598f",
+        "runtime_client": "trae-tob-git-ai",
+        "session_id": "6a993a35bb693721c77b598f",
+        "tool_use_id": "6a9a6a0df61eedd621f51177",
+        "source_scene": "unknown",
+        "edit_kind": "file_edit",
+        "tool_type": "agent",
+        "client_type": "ide",
+        "tool_id": "Edit"
+      }
+    },
+    "s_92ac20d756470b": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a993940bb693721c77b595d",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "edit_kind": "file_edit",
+        "dedupe_key": "6a993940bb693721c77b595d:6a9969ad7425ee8a7dae00fe:afterEdit:966927a3",
+        "tool_id": "Edit",
+        "tool_type": "agent",
+        "tool_use_id": "6a9969ad7425ee8a7dae00fe",
+        "runtime_client": "trae-tob-git-ai",
+        "session_id": "6a993940bb693721c77b595d",
+        "source_scene": "unknown",
+        "external_session_id": "6a993940bb693721c77b595d",
+        "operation_id": "6a9969ad7425ee8a7dae00fe",
+        "client_type": "ide"
+      }
+    },
+    "s_95ae3518604bca": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9a25b26c433cca64d65a42",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "tool_use_id": "6a9a2c146c433cca64d65b85",
+        "client_type": "ide",
+        "tool_type": "agent",
+        "runtime_client": "trae-tob-git-ai",
+        "session_id": "6a9a25b26c433cca64d65a42",
+        "source_scene": "unknown",
+        "external_session_id": "6a9a25b26c433cca64d65a42",
+        "tool_id": "Edit",
+        "edit_kind": "file_edit",
+        "dedupe_key": "6a9a25b26c433cca64d65a42:6a9a2c146c433cca64d65b85:afterEdit:966927a3",
+        "operation_id": "6a9a2c146c433cca64d65b85"
+      }
+    },
+    "s_a76d5a197f84b5": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a97d09e27051a6b99e57688",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "tool_id": "Edit",
+        "operation_id": "6a98c5a5434e85933df53f75",
+        "dedupe_key": "6a97d09e27051a6b99e57688:6a98c5a5434e85933df53f75:afterEdit:966927a3",
+        "external_session_id": "6a97d09e27051a6b99e57688",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_type": "agent",
+        "tool_use_id": "6a98c5a5434e85933df53f75",
+        "source_scene": "unknown",
+        "edit_kind": "file_edit",
+        "session_id": "6a97d09e27051a6b99e57688",
+        "client_type": "ide"
+      }
+    }
+  }
+}
