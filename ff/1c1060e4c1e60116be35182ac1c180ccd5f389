@@ -1,0 +1,51 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "ff1c1060e4c1e60116be35182ac1c180ccd5f389",
+  "prompts": {},
+  "sessions": {
+    "s_ed81356ea49cdb": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a929b12f8b9354371d8319f",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "session_id": "6a929b12f8b9354371d8319f",
+        "dedupe_key": "6a929b12f8b9354371d8319f:6a94e09b97d1b98a2eccda7a:afterEdit:966927a3",
+        "tool_id": "Edit",
+        "operation_id": "6a94e09b97d1b98a2eccda7a",
+        "tool_use_id": "6a94e09b97d1b98a2eccda7a",
+        "tool_type": "agent",
+        "edit_kind": "file_edit",
+        "external_session_id": "6a929b12f8b9354371d8319f",
+        "source_scene": "unknown",
+        "runtime_client": "trae-tob-git-ai",
+        "client_type": "ide"
+      }
+    },
+    "s_f593f1df7420b1": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a92343cd9f63d0e38360218",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "edit_kind": "file_edit",
+        "client_type": "ide",
+        "tool_type": "agent",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_use_id": "6a928c4e7924703fd435b400",
+        "external_session_id": "6a92343cd9f63d0e38360218",
+        "operation_id": "6a928c4e7924703fd435b400",
+        "source_scene": "unknown",
+        "dedupe_key": "6a92343cd9f63d0e38360218:6a928c4e7924703fd435b400:afterEdit:ce362a52",
+        "tool_id": "Edit",
+        "session_id": "6a92343cd9f63d0e38360218"
+      }
+    }
+  }
+}

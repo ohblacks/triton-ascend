@@ -1,0 +1,39 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_a76d5a197f84b5::t_ccd4d0a72b18d1 163-164
+  s_a76d5a197f84b5::t_33165118a84990 310-312
+  s_a76d5a197f84b5::t_63ae3cc1e79b72 447-449
+  s_a76d5a197f84b5::t_b8b34122282a89 187-197,199,204-206,214-228,231-239,241-251,253-271,274-277,279-290,293
+  s_a76d5a197f84b5::t_d0731454ba50b6 300-301,305
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/selection_and_fallback.mlir
+  s_a76d5a197f84b5::t_13ffa70892edce 3-4,12,16,18-20
+  s_a76d5a197f84b5::t_5da4475662b96b 28-30,33,37,47-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "fbbad0ca610bc81fc7cd92a4de14d6efd9c114b0",
+  "prompts": {},
+  "sessions": {
+    "s_a76d5a197f84b5": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a97d09e27051a6b99e57688",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "session_id": "6a97d09e27051a6b99e57688",
+        "external_session_id": "6a97d09e27051a6b99e57688",
+        "operation_id": "6a97dabb27051a6b99e5777a",
+        "source_scene": "unknown",
+        "tool_id": "Edit",
+        "tool_type": "agent",
+        "client_type": "ide",
+        "edit_kind": "file_edit",
+        "tool_use_id": "6a97dabb27051a6b99e5777a",
+        "dedupe_key": "6a97d09e27051a6b99e57688:6a97dabb27051a6b99e5777a:afterEdit:ce362a52",
+        "runtime_client": "trae-tob-git-ai"
+      }
+    }
+  }
+}
