@@ -1,0 +1,49 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/skip_negative.mlir
+  s_7036416b14c130::t_2aed921a9b5ec9 1-123
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/positive_split.mlir
+  s_7036416b14c130::t_1d1131a249f021 1-81
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_f4c96acb82b638::t_cf1c5986467697 57,63,69-70,114,118,154-159,164-239,243-244,251-320,328-330,332-334,338,380-382,424-426,435-438,441,444-456,507-511,553,565-566,608,630-631,686-687,738-739,845-847,851,863,866,890-891,949-951,958-959,1005-1006,1009-1011,1038-1039,1184,1263-1265,1291-1292,1315,1333,1382,1460-1462,1473,1498-1499,1728,1733-1734,1736-1739
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "cfefe2f91067110d3059e6b3c76abf5ac7faafed",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_7036416b14c130": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a993a35bb693721c77b598f",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "tool_id": "Edit",
+        "tool_type": "agent",
+        "edit_kind": "file_edit",
+        "dedupe_key": "6a993a35bb693721c77b598f:6a9a8384f61eedd621f513d3:afterEdit:966927a3",
+        "client_type": "ide",
+        "operation_id": "6a9a8384f61eedd621f513d3",
+        "session_id": "6a993a35bb693721c77b598f",
+        "external_session_id": "6a993a35bb693721c77b598f",
+        "source_scene": "unknown",
+        "runtime_client": "trae-tob-git-ai",
+        "tool_use_id": "6a9a8384f61eedd621f513d3"
+      }
+    },
+    "s_f4c96acb82b638": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9ea19d2203928b436bb4a1",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>"
+    }
+  }
+}
