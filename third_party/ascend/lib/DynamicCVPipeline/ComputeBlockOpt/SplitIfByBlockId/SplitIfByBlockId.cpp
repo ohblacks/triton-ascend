@@ -195,12 +195,12 @@ static CoreType groupIsCube(const BlockGroup &group) {
   };
   for (auto *op : group.ops) {
     if (classifyOp(op) || (seenCube && seenVector)) {
-      return CoreType::UNDETERMINED;
+      return CoreType::CUBE_AND_VECTOR;
     }
   }
   for (auto nestedIf : group.nestedIfs) {
     if (classifyOp(nestedIf) || (seenCube && seenVector)) {
-      return CoreType::UNDETERMINED;
+      return CoreType::CUBE_AND_VECTOR;
     }
   }
   if (seenCube) {
@@ -260,7 +260,8 @@ static bool hasBidirectionalCrossCoreDeps(
   for (size_t i = 0; i < groups.size(); ++i) {
     auto cubeStatus = groupIsCube(groups[i]);
     isCube.push_back(cubeStatus);
-    if (cubeStatus == CoreType::UNDETERMINED) {
+    if (cubeStatus == CoreType::UNDETERMINED ||
+        cubeStatus == CoreType::CUBE_AND_VECTOR) {
       continue;
     }
     hasCubeGroup = hasCubeGroup || (cubeStatus == CoreType::CUBE_ONLY);
@@ -277,7 +278,9 @@ static bool hasBidirectionalCrossCoreDeps(
   for (size_t i = 0; i < groups.size(); ++i) {
     for (size_t j = 0; j < groups.size(); ++j) {
       if (i == j || isCube[i] == CoreType::UNDETERMINED ||
-          isCube[j] == CoreType::UNDETERMINED || isCube[i] == isCube[j]) {
+          isCube[i] == CoreType::CUBE_AND_VECTOR ||
+          isCube[j] == CoreType::UNDETERMINED ||
+          isCube[j] == CoreType::CUBE_AND_VECTOR || isCube[i] == isCube[j]) {
         continue;
       }
       if (!groupFeedsGroup(groups[i], groups[j], memGraph)) {
@@ -303,10 +306,12 @@ mergeConsecutiveSameCoreType(SmallVector<BlockGroup> &&groups) {
   SmallVector<BlockGroup> merged;
   merged.push_back(std::move(groups[0]));
   for (size_t i = 1; i < groups.size(); ++i) {
-    auto prevIsCube = groupIsCube(merged.back());
-    auto curIsCube = groupIsCube(groups[i]);
-    if (prevIsCube != CoreType::UNDETERMINED &&
-        curIsCube != CoreType::UNDETERMINED && prevIsCube == curIsCube) {
+    auto prevType = groupIsCube(merged.back());
+    auto curType = groupIsCube(groups[i]);
+    if (prevType != CoreType::UNDETERMINED &&
+        prevType != CoreType::CUBE_AND_VECTOR &&
+        curType != CoreType::UNDETERMINED &&
+        curType != CoreType::CUBE_AND_VECTOR && prevType == curType) {
       auto &prev = merged.back();
       prev.ops.append(groups[i].ops.begin(), groups[i].ops.end());
       prev.nestedIfs.append(groups[i].nestedIfs.begin(),
