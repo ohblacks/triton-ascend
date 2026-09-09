@@ -1,0 +1,45 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/fill_placeholder.mlir
+  s_aa4603a5c08d7d::t_cb25735785f28c 1-49,54-55,57,62-63,65-69,75-78
+  s_aa4603a5c08d7d::t_aad4c1e16a73cf 50-53,56,58-61,64,70-74
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_aa4603a5c08d7d::t_8bdf8409a0fc35 998-1012,1784
+  s_aa4603a5c08d7d::t_941b822d256213 57,63,69-70,114,118,154-159,164-239,243-244,251-325,333-335,337-339,343,385-387,429-431,440-443,446,449-461,512-516,558,570-571,613,635-636,691-692,743-744,850-852,856,868,871,895-896,954-956,963-964,1023-1024,1027-1029,1056-1057,1202,1281-1283,1309-1310,1333,1351,1400,1478-1480,1491,1516-1517,1746,1751-1752,1754-1757
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/positive_split.mlir
+  s_aa4603a5c08d7d::t_1a46a89b1487ad 1-81
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/skip_negative.mlir
+  s_aa4603a5c08d7d::t_4439633341ab98 1-123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "f3dbb1db68efc31bf66f67a9450d85bdccc53ffb",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_aa4603a5c08d7d": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9e82276d041734a31f549c",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "tool_use_id": "6aa0ba0b6f05208fc598373a",
+        "runtime_client": "trae-tob-git-ai",
+        "dedupe_key": "6a9e82276d041734a31f549c:6aa0ba0b6f05208fc598373a:afterEdit:db2bf363",
+        "source_scene": "unknown",
+        "tool_id": "Edit",
+        "operation_id": "6aa0ba0b6f05208fc598373a",
+        "session_id": "6a9e82276d041734a31f549c",
+        "external_session_id": "6a9e82276d041734a31f549c",
+        "tool_type": "agent",
+        "edit_kind": "file_edit",
+        "client_type": "ide"
+      }
+    }
+  }
+}
