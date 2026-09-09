@@ -1,0 +1,32 @@
+CMakeLists.txt
+  s_aa4603a5c08d7d::t_ae2c40b82f1034 18-20,24,29-33,141-155,191-205,218-223,229-232,390-395
+bin/CMakeLists.txt
+  s_aa4603a5c08d7d::t_b9937c99cdab52 3-8,10-11,17-35,57-75,96-114,154-173
+bin/RegisterTritonDialects.h
+  s_aa4603a5c08d7d::t_ed149265998c74 2-30,33,118-130,182-197,204-205,210-216
+bin/triton-opt.cpp
+  s_aa4603a5c08d7d::t_a72d14112e6d7b 2,10-12
+include/triton/Dialect/Triton/IR/TritonAttrDefs.td
+  s_aa4603a5c08d7d::t_62d05225749eec 133-135
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "9a9ab56988cf1e8caf00a80e99679893f7299f55",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_aa4603a5c08d7d": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9e82276d041734a31f549c",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>"
+    }
+  }
+}
