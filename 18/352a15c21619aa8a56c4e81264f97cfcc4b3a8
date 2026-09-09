@@ -1,0 +1,50 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_aa4603a5c08d7d::t_941b822d256213 57,63,69-70,114,118,154-159,164-239,243-244,251-325,333-335,337-339,343,385-387,429-431,440-443,446,449-461,512-516,558,570-571,613,635-636,691-692,743-744,850-852,856,868,871,895-896,954-956,963-964,1010-1011,1014-1016,1043-1044,1189,1268-1270,1296-1297,1320,1338,1387,1465-1467,1478,1503-1504,1733,1738
+  s_596d5d7b0acdb8::t_833e26f2812eee 1739,1741-1744
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/skip_negative.mlir
+  s_aa4603a5c08d7d::t_4439633341ab98 1-123
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/positive_split.mlir
+  s_aa4603a5c08d7d::t_1a46a89b1487ad 1-81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "18352a15c21619aa8a56c4e81264f97cfcc4b3a8",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_596d5d7b0acdb8": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa10288a045aa4083a077d0",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>"
+    },
+    "s_aa4603a5c08d7d": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9e82276d041734a31f549c",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "edit_kind": "file_edit",
+        "client_type": "ide",
+        "tool_type": "agent",
+        "runtime_client": "trae-tob-git-ai",
+        "dedupe_key": "6a9e82276d041734a31f549c:6aa0ba0b6f05208fc598373a:afterEdit:db2bf363",
+        "tool_use_id": "6aa0ba0b6f05208fc598373a",
+        "tool_id": "Edit",
+        "session_id": "6a9e82276d041734a31f549c",
+        "external_session_id": "6a9e82276d041734a31f549c",
+        "operation_id": "6aa0ba0b6f05208fc598373a",
+        "source_scene": "unknown"
+      }
+    }
+  }
+}
