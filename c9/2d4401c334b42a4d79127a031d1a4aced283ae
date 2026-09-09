@@ -1,0 +1,37 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_aa4603a5c08d7d::t_2277250a32245e 884-898
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "c92d4401c334b42a4d79127a031d1a4aced283ae",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_aa4603a5c08d7d": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a9e82276d041734a31f549c",
+        "model": "glm-5.3__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "tool_type": "agent",
+        "operation_id": "6aa0b5456f05208fc5983618",
+        "dedupe_key": "6a9e82276d041734a31f549c:6aa0b5456f05208fc5983618:afterEdit:f8768d54",
+        "source_scene": "unknown",
+        "external_session_id": "6a9e82276d041734a31f549c",
+        "tool_id": "Edit",
+        "session_id": "6a9e82276d041734a31f549c",
+        "client_type": "ide",
+        "runtime_client": "trae-tob-git-ai",
+        "edit_kind": "file_edit",
+        "tool_use_id": "6aa0b5456f05208fc5983618"
+      }
+    }
+  }
+}
