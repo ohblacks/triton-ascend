@@ -1,0 +1,47 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_596d5d7b0acdb8::t_504087d1f78a62 925-926,948-950,953-963,985,1012-1026,1456,1458-1459,1490,1504-1505,1598,1683
+  s_8536a41abd3d35::t_c5db5b9212928d 1751
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/splitted_if_tag.mlir
+  s_596d5d7b0acdb8::t_24501262b0a5b9 1-29,32,37-47,84
+  s_8536a41abd3d35::t_332f655fdaa55f 48-83
+  s_8536a41abd3d35::t_9c55f78f76acb6 30-31,33-36
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/fill_placeholder.mlir
+  s_596d5d7b0acdb8::t_4a9ce9fb59df8c 1-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "a29e39a8c0fb184c07fadbc17e405c5046185e60",
+  "prompts": {},
+  "sessions": {
+    "s_596d5d7b0acdb8": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa10288a045aa4083a077d0",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>"
+    },
+    "s_8536a41abd3d35": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa102c4a045aa4083a0781c",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "source_scene": "unknown",
+        "tool_id": "Edit",
+        "client_type": "ide",
+        "dedupe_key": "6aa102c4a045aa4083a0781c:6aa116b2a045aa4083a07ad5:afterEdit:eb61c078",
+        "tool_use_id": "6aa116b2a045aa4083a07ad5",
+        "session_id": "6aa102c4a045aa4083a0781c",
+        "tool_type": "agent",
+        "edit_kind": "file_edit",
+        "external_session_id": "6aa102c4a045aa4083a0781c",
+        "operation_id": "6aa116b2a045aa4083a07ad5",
+        "runtime_client": "trae-tob-git-ai"
+      }
+    }
+  }
+}
