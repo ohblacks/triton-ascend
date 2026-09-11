@@ -1,0 +1,33 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/splitted_if_tag.mlir
+  s_72699b45933672::t_39e0c0e8849a1f 14-16,20-22,24-26,49-51,55-56,58-59,61-73,91-93,97-99,102-112,116-126
+  s_72699b45933672::t_a3d5834fcdaf70 27-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "babc03fc396c30b52478ae4e1dc5d25e67fe1df1",
+  "prompts": {},
+  "sessions": {
+    "s_72699b45933672": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa2a056ec8f61d274476247",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "tool_id": "Write",
+        "client_type": "ide",
+        "operation_id": "6aa36ae1815f287a807ad0e9",
+        "edit_kind": "file_edit",
+        "tool_use_id": "6aa36ae1815f287a807ad0e9",
+        "runtime_client": "trae-tob-git-ai",
+        "external_session_id": "6aa2a056ec8f61d274476247",
+        "source_scene": "unknown",
+        "dedupe_key": "6aa2a056ec8f61d274476247:6aa36ae1815f287a807ad0e9:afterEdit:eb61c078",
+        "session_id": "6aa2a056ec8f61d274476247",
+        "tool_type": "agent"
+      }
+    }
+  }
+}
