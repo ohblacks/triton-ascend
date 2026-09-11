@@ -1,0 +1,32 @@
+.pre-commit-config.yaml
+  s_72699b45933672::t_baa8a155ca83fe 41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "f4a42f84eb3a342ab7c5b1eefa1aa298e44c4ebc",
+  "prompts": {},
+  "sessions": {
+    "s_72699b45933672": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa2a056ec8f61d274476247",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "tool_use_id": "6aa3683f815f287a807ad09f",
+        "session_id": "6aa2a056ec8f61d274476247",
+        "tool_id": "Edit",
+        "tool_type": "agent",
+        "client_type": "ide",
+        "operation_id": "6aa3683f815f287a807ad09f",
+        "source_scene": "unknown",
+        "external_session_id": "6aa2a056ec8f61d274476247",
+        "edit_kind": "file_edit",
+        "dedupe_key": "6aa2a056ec8f61d274476247:6aa3683f815f287a807ad09f:afterEdit:63464d7a",
+        "runtime_client": "trae-tob-git-ai"
+      }
+    }
+  }
+}
