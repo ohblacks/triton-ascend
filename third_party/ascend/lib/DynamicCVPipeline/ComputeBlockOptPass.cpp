@@ -56,6 +56,8 @@ void ComputeBlockOptPass::runOnOperation() {
   pm.addPass(createMergeCubeForBlockPass());
   pm.addPass(createReorderOpsByBlockIdPass());
 
+  pm.addPass(createExpLoadPatternPass());
+  pm.addPass(createReorderOpsByBlockIdPass());
   pm.addPass(createUBUsageOptPass());
   pm.addPass(createBroadcastUBOptPass());
   pm.addPass(createPosMaskPatternPass());
@@ -81,6 +83,7 @@ void ComputeBlockOptPass::runOnOperation() {
   pm.addPass(createReorderOpsByBlockIdPass());
 
   pm.addPass(createMergeCubeBlockPass());
+  pm.addPass(createMergeInputInitSharedCubeBlockPass());
   pm.addPass(createReorderOpsByBlockIdPass());
   pm.addPass(createRelocateMemrefDeclPass());
 
@@ -111,6 +114,7 @@ void registerComputeBlockOptPasses() {
   registerPass(createFixpipeOptPass);
   registerPass(createUnifyStoreBlockPass);
   registerPass(createExpSubfPatternPass);
+  registerPass(createExpLoadPatternPass);
   registerPass(createSinkI1ProducersIntoUsersPass);
   registerPass(createBroadcastUBOptPass);
   registerPass(createMoveLoadIntoUserPass);
@@ -118,6 +122,7 @@ void registerComputeBlockOptPasses() {
   registerPass(createMergeSmallBlockPass);
   registerPass(createSplitIfByBlockIdPass);
   registerPass(createMergeComputeBlockPass);
+  registerPass(createMergeInputInitSharedCubeBlockPass);
   registerPass(createMergeCubeBlockPass);
   registerPass(createRelocateMemrefDeclPass);
 }
