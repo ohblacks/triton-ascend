@@ -1,0 +1,126 @@
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_df5efaeaa23dc7::t_e507fd85efd707 1427,1437-1441
+  s_8bbbf3c7a2b9b9::t_6f0e79255bd80e 978-982
+  s_8bbbf3c7a2b9b9::t_7481942f14e98e 1167
+  s_8bbbf3c7a2b9b9::t_9b8f48d53c1993 927-928
+  s_8bbbf3c7a2b9b9::t_444a7dbc710e96 1168-1170
+  s_8bbbf3c7a2b9b9::t_a88e79f02a773e 297-298,302
+  s_8bbbf3c7a2b9b9::t_757ee0f65024ed 1450
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/positive_split.mlir
+  s_8bbbf3c7a2b9b9::t_fa9e94d3103f83 82-85,87,89-110
+  s_8bbbf3c7a2b9b9::t_1ce1cb196f88f6 86,88
+  s_8bbbf3c7a2b9b9::t_ed6aa79ad782a5 111-139
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/splitted_if_tag.mlir
+  s_8536a41abd3d35::t_332f655fdaa55f 48-83
+  s_596d5d7b0acdb8::t_24501262b0a5b9 1-29,32,37-47,84
+  s_8536a41abd3d35::t_9c55f78f76acb6 30-31,33-36
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/skip_negative.mlir
+  s_8bbbf3c7a2b9b9::t_6488843a7bddbc 124-146
+third_party/ascend/include/DynamicCVPipeline/Common/Utils.h
+  s_9181931140c82b::t_a9f7ab0594d18c 53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "c02aac62b9882a5ea2cabc6ec9b90282d8c5ad0a",
+  "prompts": {},
+  "humans": {
+    "h_a864c273c84a0b": {
+      "author": "open_zk <2086579770@qq.com>"
+    }
+  },
+  "sessions": {
+    "s_596d5d7b0acdb8": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa10288a045aa4083a077d0",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>"
+    },
+    "s_8536a41abd3d35": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa102c4a045aa4083a0781c",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "operation_id": "6aa116b2a045aa4083a07ad5",
+        "runtime_client": "trae-tob-git-ai",
+        "source_scene": "unknown",
+        "tool_type": "agent",
+        "external_session_id": "6aa102c4a045aa4083a0781c",
+        "tool_use_id": "6aa116b2a045aa4083a07ad5",
+        "session_id": "6aa102c4a045aa4083a0781c",
+        "dedupe_key": "6aa102c4a045aa4083a0781c:6aa116b2a045aa4083a07ad5:afterEdit:eb61c078",
+        "client_type": "ide",
+        "tool_id": "Edit",
+        "edit_kind": "file_edit"
+      }
+    },
+    "s_8bbbf3c7a2b9b9": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa7684e9c41ba4ca74154fb",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "client_type": "ide",
+        "operation_id": "6aa7af9067caf27dc0ef6720",
+        "tool_id": "Edit",
+        "external_session_id": "6aa7684e9c41ba4ca74154fb",
+        "source_scene": "unknown",
+        "edit_kind": "file_edit",
+        "dedupe_key": "6aa7684e9c41ba4ca74154fb:6aa7af9067caf27dc0ef6720:afterEdit:65591b32",
+        "tool_type": "agent",
+        "tool_use_id": "6aa7af9067caf27dc0ef6720",
+        "session_id": "6aa7684e9c41ba4ca74154fb",
+        "runtime_client": "trae-tob-git-ai"
+      }
+    },
+    "s_9181931140c82b": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa37532815f287a807ad294",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "source_scene": "unknown",
+        "edit_kind": "file_edit",
+        "tool_use_id": "6aa3a67f9ab0f498ddc1ba7e",
+        "tool_type": "agent",
+        "tool_id": "Edit",
+        "client_type": "ide",
+        "session_id": "6aa37532815f287a807ad294",
+        "runtime_client": "trae-tob-git-ai",
+        "operation_id": "6aa3a67f9ab0f498ddc1ba7e",
+        "dedupe_key": "6aa37532815f287a807ad294:6aa3a67f9ab0f498ddc1ba7e:afterEdit:f8768d54",
+        "external_session_id": "6aa37532815f287a807ad294"
+      }
+    },
+    "s_df5efaeaa23dc7": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa7b2ce67caf27dc0ef679f",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": "open_zk <2086579770@qq.com>",
+      "custom_attributes": {
+        "operation_id": "6aa7b34767caf27dc0ef67e9",
+        "runtime_client": "trae-tob-git-ai",
+        "session_id": "6aa7b2ce67caf27dc0ef679f",
+        "tool_id": "Edit",
+        "tool_use_id": "6aa7b34767caf27dc0ef67e9",
+        "dedupe_key": "6aa7b2ce67caf27dc0ef679f:6aa7b34767caf27dc0ef67e9:afterEdit:f8768d54",
+        "external_session_id": "6aa7b2ce67caf27dc0ef679f",
+        "source_scene": "unknown",
+        "tool_type": "agent",
+        "client_type": "ide",
+        "edit_kind": "file_edit"
+      }
+    }
+  }
+}
