@@ -1,0 +1,39 @@
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/positive_split.mlir
+  s_8bbbf3c7a2b9b9::t_ed6aa79ad782a5 110-138
+  s_8bbbf3c7a2b9b9::t_fa9e94d3103f83 82-109
+third_party/ascend/unittest/Conversion/General/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/skip_negative.mlir
+  s_8bbbf3c7a2b9b9::t_6488843a7bddbc 124-146
+third_party/ascend/lib/DynamicCVPipeline/ComputeBlockOpt/SplitIfByBlockId/SplitIfByBlockId.cpp
+  s_8bbbf3c7a2b9b9::t_7481942f14e98e 1162
+  s_8bbbf3c7a2b9b9::t_a88e79f02a773e 297-298,302
+  s_8bbbf3c7a2b9b9::t_757ee0f65024ed 1440
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "40f54ace259ac9aa3eb9c0636bcf8f918ceb5efe",
+  "prompts": {},
+  "sessions": {
+    "s_8bbbf3c7a2b9b9": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6aa7684e9c41ba4ca74154fb",
+        "model": "deepseek-V4-Pro__dev"
+      },
+      "human_author": null,
+      "custom_attributes": {
+        "edit_kind": "file_edit",
+        "source_scene": "unknown",
+        "tool_type": "agent",
+        "runtime_client": "trae-tob-git-ai",
+        "session_id": "6aa7684e9c41ba4ca74154fb",
+        "operation_id": "6aa7adc167caf27dc0ef66b7",
+        "dedupe_key": "6aa7684e9c41ba4ca74154fb:6aa7adc167caf27dc0ef66b7:afterEdit:81c0c2d3",
+        "client_type": "ide",
+        "tool_id": "Edit",
+        "external_session_id": "6aa7684e9c41ba4ca74154fb",
+        "tool_use_id": "6aa7adc167caf27dc0ef66b7"
+      }
+    }
+  }
+}
